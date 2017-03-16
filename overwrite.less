@@ -1,0 +1,158 @@
+/**
+ * Overwrite for custom style
+ *
+ * ln -s path/to/overwrite.less ~/.atom/packages/gruvbox-plus-syntax/styles/overwrite.less
+ * Edit index.less and add: @import 'styles/overwrite';
+ * Edit styles/schemes/dark-{hard,medium,soft}.less and change:
+ *   @foreground to #F5DEB3
+ * Edit styles/schemes/dark.less and change:
+ *   @blue   to #4682B4
+ *   @purple to #BA55D3
+ */
+
+atom-text-editor {
+  font-weight: 300 !important;
+}
+
+// 17. Punctuation (except string)
+.syntax--entity.syntax--quasi.syntax--element .syntax--meta.syntax--group.syntax--braces,
+.syntax--keyword.syntax--operator .syntax--keyword.syntax--operator.syntax--neon,
+.syntax--keyword.syntax--operator .syntax--operator.syntax--neon,
+.syntax--keyword.syntax--other.syntax--accessor,
+.syntax--meta.syntax--attribute-selector .syntax--keyword.syntax--operator.syntax--stylus,
+.syntax--meta.syntax--brace,
+.syntax--meta.syntax--delimiter,
+.syntax--meta.syntax--group.syntax--braces,
+.syntax--meta.syntax--punctuation.syntax--separator,
+.syntax--meta.syntax--separator,
+.syntax--punctuation,
+.syntax--punctuation.syntax--definition.syntax--string,
+.syntax--meta.syntax--delimiter.syntax--method.syntax--period {
+  color: @orange;
+}
+
+// 17. Punctuation (string)
+.syntax--punctuation.syntax--definition.syntax--string {
+  color: @green;
+}
+
+// 75. Template String Punctuation
+.syntax--entity.syntax--name.syntax--tag.syntax--mustache,
+.syntax--entity.syntax--tag.syntax--tagbraces,
+.syntax--punctuation.syntax--definition.syntax--string.syntax--template,
+.syntax--string.syntax--quoted.syntax--template .syntax--punctuation.syntax--definition,
+.syntax--punctuation.syntax--definition.syntax--template-expression,
+.syntax--punctuation.syntax--quasi,
+.syntax--punctuation.syntax--section.syntax--embedded,
+.syntax--punctuation.syntax--section.syntax--embedded .syntax--source,
+.syntax--string.syntax--interpolated,
+.syntax--variable.syntax--other.syntax--interpolation.syntax--scss,
+.syntax--variable.syntax--interpolation.syntax--scss,
+.syntax--punctuation.syntax--definition.syntax--interpolation {
+  color: @purple;
+}
+
+// 91. Keywords
+.syntax--js.syntax--embedded.syntax--control.syntax--flow .syntax--keyword.syntax--operator.syntax--js,
+.syntax--keyword,
+.syntax--keyword.syntax--control,
+.syntax--keyword.syntax--operator.syntax--logical.syntax--python,
+.syntax--meta.syntax--at-rule.syntax--media .syntax--support.syntax--function.syntax--misc,
+.syntax--meta.syntax--prolog.syntax--haml,
+.syntax--meta.syntax--tag.syntax--sgml.syntax--doctype.syntax--html,
+.syntax--comment.syntax--other.syntax--doctype.syntax--jade,
+.syntax--source.syntax--cs .syntax--keyword.syntax--operator,
+.syntax--storage.syntax--type.syntax--function.syntax--jade,
+.syntax--storage.syntax--type.syntax--function.syntax--pug,
+.syntax--storage.syntax--type.syntax--import.syntax--haxe,
+.syntax--storage.syntax--type.syntax--import.syntax--include.syntax--jade,
+.syntax--storage.syntax--type.syntax--import.syntax--include.syntax--pug,
+.syntax--variable.syntax--documentroot,
+.syntax--meta.syntax--at-rule .syntax--keyword.syntax--control.syntax--at-rule,
+.syntax--punctuation.syntax--definition.syntax--directive,
+.syntax--variable.syntax--language.syntax--default.syntax--js {
+  color: @blue;
+}
+
+// 124. Operators
+.syntax--keyword.syntax--control.syntax--new,
+.syntax--keyword.syntax--control.syntax--operator,
+.syntax--keyword.syntax--operator,
+.syntax--keyword.syntax--other.syntax--arrow,
+.syntax--keyword.syntax--other.syntax--double-colon,
+.syntax--storage.syntax--type.syntax--arrow,
+.syntax--meta.syntax--attribute-selector .syntax--punctuation.syntax--separator.syntax--operator,
+.syntax--support.syntax--constant.syntax--mathematical-symbols,
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--parent-selector .syntax--punctuation {
+  color: @orange;
+}
+
+// 145. Storage
+.syntax--storage,
+.syntax--storage.syntax--type.syntax--annotation,
+.syntax--storage.syntax--type.syntax--primitive {
+  color: @blue;
+}
+
+// 160. Function Keyword
+.syntax--entity.syntax--quasi.syntax--tag.syntax--name,
+.syntax--meta.syntax--function .syntax--storage.syntax--type.syntax--matlab,
+.syntax--storage.syntax--type.syntax--function {
+  color: @blue;
+}
+
+// 167. Variables
+.syntax--entity.syntax--name.syntax--val.syntax--declaration,
+.syntax--entity.syntax--name.syntax--variable,
+.syntax--meta.syntax--definition.syntax--variable,
+.syntax--storage.syntax--type.syntax--variable,
+.syntax--variable,
+.syntax--variable.syntax--interpolation .syntax--variable,
+.syntax--variable.syntax--other.syntax--interpolation .syntax--variable,
+.syntax--variable.syntax--parameter.syntax--output.syntax--function.syntax--matlab,
+.syntax--variable.syntax--parameter.syntax--sass,
+.syntax--variable.syntax--other.syntax--interpolation.syntax--less,
+.syntax--variable.syntax--control.syntax--import.syntax--include.syntax--pug {
+  color: @foreground;
+}
+
+// 395. Function Calls
+.syntax--keyword.syntax--other.syntax--special-method,
+.syntax--meta.syntax--function-call .syntax--variable.syntax--function,
+.syntax--meta.syntax--function-call .syntax--entity.syntax--name.syntax--function,
+.syntax--support.syntax--function,
+.syntax--meta.syntax--at-rule.syntax--namespace .syntax--entity.syntax--name.syntax--function,
+.syntax--source.syntax--script.syntax--jade.syntax--entity.syntax--name.syntax--function.syntax--pug {
+  color: @yellow;
+}
+
+// 405. Method Calls
+.syntax--meta.syntax--function-call.syntax--method .syntax--variable.syntax--function,
+.syntax--meta.syntax--function-call.syntax--static .syntax--variable.syntax--function,
+.syntax--meta.syntax--method-call,
+.syntax--meta.syntax--method-call .syntax--variable.syntax--function,
+.syntax--support.syntax--function.syntax--mutator,
+.syntax--meta.syntax--method-call .syntax--entity.syntax--name.syntax--function,
+.syntax--meta.syntax--method-call .syntax--support.syntax--function {
+  color: @yellow;
+}
+
+// 421. Entities
+.syntax--entity.syntax--name.syntax--accessor,
+.syntax--entity.syntax--name.syntax--function,
+.syntax--entity.syntax--name.syntax--section {
+  color: @yellow;
+}
+
+// 544. Function Call Braces
+.syntax--constant.syntax--name.syntax--attribute.syntax--tag.syntax--jade,
+.syntax--meta.syntax--brace.syntax--round,
+.syntax--punctuation.syntax--definition.syntax--parameters,
+.syntax--punctuation.syntax--definition.syntax--method-parameters,
+.syntax--punctuation.syntax--section.syntax--function.syntax--css,
+.syntax--meta.syntax--function-call .syntax--meta.syntax--group .syntax--punctuation.syntax--definition.syntax--group,
+.syntax--punctuation.syntax--separator.syntax--variable.syntax--ruby,
+.syntax--meta.syntax--function-call .syntax--punctuation.syntax--definition.syntax--arguments,
+.syntax--constant.syntax--name.syntax--attribute.syntax--tag.syntax--pug {
+  color: @orange;
+}
