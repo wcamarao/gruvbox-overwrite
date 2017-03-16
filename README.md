@@ -1,6 +1,6 @@
 # Gruvbox Overwrite
 
-This is an extension to the awesome [gruvbox-plus-syntax](https://atom.io/themes/gruvbox-plus-syntax) Atom theme to make the syntax highlighting simpler by reducing the variety of colors. The original theme supports several languages and it's up to date with the latest Atom (1.15) which [removed shadow DOM boundaries](http://blog.atom.io/2016/11/14/removing-shadow-dom-boundary-from-text-editor-elements.html). However, the color scheme is too variant to my eyes, meaning JS functions differ from methods and so on. Instead, I prefer to emphasize punctuation and keywords while treating callables equally.
+This is an extension to the awesome [gruvbox-plus-syntax](https://atom.io/themes/gruvbox-plus-syntax) Atom theme to make the syntax highlighting simpler by reducing the variety of colors. The original theme supports several languages and it's up to date with latest Atom (1.15) which [removed shadow DOM boundaries](http://blog.atom.io/2016/11/14/removing-shadow-dom-boundary-from-text-editor-elements.html). However, the color scheme is too variant to my eyes, meaning JS functions differ from methods and so on. Instead, I prefer to emphasize punctuation and keywords while treating callables equally.
 
 ## Preview
 
