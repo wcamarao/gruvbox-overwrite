@@ -31,8 +31,12 @@ $ ln -s <path/to>/overwrite.less ~/.atom/packages/gruvbox-plus-syntax/styles/ove
 ##### 5. Edit `styles/schemes/dark.less` and change:
 
 ```css
-@blue: #4682B4;
-@purple: #BA55D3;
+@green: #a3a622;
+@yellow: #f0aa06;
+@blue: #4682b4;
+@purple: #ba55d3;
+@aqua: #8ec07c;
+@orange: #fc7201;
 ```
 
 ## Credits
