@@ -168,3 +168,27 @@ atom-text-editor {
 .syntax--constant.syntax--name.syntax--attribute.syntax--tag.syntax--pug {
   color: @orange;
 }
+
+/*
+ * New
+ */
+
+atom-text-editor .highlight {
+  &.find-result .region,
+  &.current-result .region,
+  &.current-result ~ .highlight.selection .region {
+    z-index: -1;
+  }
+
+  &.find-result .region {
+    border: 1px solid @fg1;
+    border-radius: 2px;
+  }
+
+  &.current-result .region,
+  &.current-result ~ .highlight.selection .region {
+    background: white;
+    border: 1px solid white;
+    border-radius: 2px;
+  }
+}
