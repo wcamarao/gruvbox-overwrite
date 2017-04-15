@@ -28,6 +28,13 @@ atom-text-editor {
   color: @green;
 }
 
+// 68. Entity
+.syntax--constant.syntax--language.syntax--name,
+.syntax--entity.syntax--name.syntax--type,
+.syntax--entity.syntax--other.syntax--inherited-class {
+  color: @foreground;
+}
+
 // 75. Template String Punctuation
 .syntax--entity.syntax--name.syntax--tag.syntax--mustache,
 .syntax--entity.syntax--tag.syntax--tagbraces,
@@ -108,10 +115,23 @@ atom-text-editor {
   color: @foreground;
 }
 
+// 222. User-Defined Constants
+.syntax--variable.syntax--other.syntax--constant,
+.syntax--constant.syntax--other.syntax--js {
+  color: @foreground;
+}
+
 // 236. Invalids and Illegals
 .syntax--invalid {
   color: @fg1;
   background-color: @red;
+}
+
+// 368. Support
+.syntax--support.syntax--class,
+.syntax--support.syntax--type,
+.syntax--variable.syntax--other.syntax--class {
+  color: @foreground;
 }
 
 // 395. Function Calls
